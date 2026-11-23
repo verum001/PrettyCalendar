@@ -1,6 +1,6 @@
 # pretty calendar
 
-A tiny offline cycle calendar for Android, with a kawaii sakura style.
+A tiny offline womens calendar for Android, with a kawaii sakura style.
 
 - Hold a date to set a violet lotus and start a cycle. A new date replaces the previous cycle.
 - Heart on day 14, pink flower on day 28, counting the selected date as day 1.
