@@ -1,0 +1,18 @@
+/* SPDX-License-Identifier: Apache-2.0
+ * Copyright 2026 Jack
+ */
+plugins { id 'com.android.application' }
+def appVersion = new Properties()
+rootProject.file('version.properties').withInputStream { appVersion.load(it) }
+android {
+    namespace 'com.prettycalendar.app'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.prettycalendar.app'
+        minSdk 26
+        targetSdk 35
+        versionCode appVersion.getProperty('versionCode').toInteger()
+        versionName appVersion.getProperty('versionName')
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
